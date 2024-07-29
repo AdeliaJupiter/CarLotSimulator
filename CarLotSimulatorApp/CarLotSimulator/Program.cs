@@ -18,9 +18,22 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
+            Car bmwi8 = new Car();
+            bmwi8.Make = "BMW";
+            bmwi8.Model = "i8";
+            bmwi8.Year = 2024;
+            bmwi8.IsDriveable = true;
+            bmwi8.EngineNoise = "vavroom";
+            bmwi8.HonkNoise = "beep";
+
+            bmwi8.MakeEngineNoise(bmwi8.EngineNoise);
+            bmwi8.MakeHonkNoise(bmwi8.HonkNoise);
+
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            Car toyotaAvalon = new Car();
+            toyotaAvalon
 
             //*************BONUS X 2*************//
 
