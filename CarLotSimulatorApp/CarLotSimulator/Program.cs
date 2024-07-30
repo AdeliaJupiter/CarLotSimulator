@@ -8,32 +8,41 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
+            //DONE--Create a seperate class file called Car
+            //DONE--Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
+            //DONE--Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
+            //DONE--The methods should take one string parameter: the respective noise property
 
 
-            //Now that the Car class is created we can instanciate 3 new cars
-            //Set the properties for each of the cars
-            //Call each of the methods for each car
+            //DONE--Now that the Car class is created we can instanciate 3 new cars
+            //DONE--Set the properties for each of the cars
+            //DONE--Call each of the methods for each car
 
-            Car bmwi8 = new Car();
-            bmwi8.Make = "BMW";
-            bmwi8.Model = "i8";
-            bmwi8.Year = 2024;
-            bmwi8.IsDriveable = true;
-            bmwi8.EngineNoise = "vavroom";
-            bmwi8.HonkNoise = "beep";
+            var dreamCar = new Car();
+            dreamCar.Make = "BMW";
+            dreamCar.Model = "i8";
+            dreamCar.Year = 2024;
+            dreamCar.IsDriveable = true;
+            dreamCar.EngineNoise = "vavroom";
+            dreamCar.HonkNoise = "beep";
 
-            bmwi8.MakeEngineNoise(bmwi8.EngineNoise);
-            bmwi8.MakeHonkNoise(bmwi8.HonkNoise);
+            dreamCar.MakeEngineNoise(dreamCar.EngineNoise);
+            dreamCar.MakeHonkNoise(dreamCar.HonkNoise);
 
             //*************BONUS*************//
 
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
-            Car toyotaAvalon = new Car();
-            toyotaAvalon
+            //DONE-- Set the properties utilizing the 3 different ways we learned about, one way for each car
+            var charliesCar = new Car()
+            {
+                Make = "Toyota",
+                Model = "Avalon",
+                Year = 2002,
+                IsDriveable = false,
+                EngineNoise = "kaklunk",
+                HonkNoise = "braaaaap"
+            };
+
+            var caitysCar = new Car(2007, "Cheverolet", "Impala", "cachuga", "hooonk", true);
 
             //*************BONUS X 2*************//
 
